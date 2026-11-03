@@ -44,12 +44,12 @@ Point the client at `https://signalseek.cc/api/mcp` over streamable HTTP. The se
 | `update_campaign` | Changes a campaign's settings or status (pause, resume, archive) | Write |
 | `update_persona` | Changes a campaign's reply persona | Write |
 | `add_subreddits` | Adds subreddits to a campaign, each checked against Reddit first | Write |
-| `update_subreddit` | Excludes, restores or removes one subreddit | Write |
+| `update_subreddit` | Excludes, restores or removes one subreddit. Remove works only on subreddits you added | Write |
 | `add_search_terms` | Adds search terms to a campaign | Write |
 | `update_search_term` | Excludes, restores or removes one search term | Write |
 | `generate_draft_reply` | Writes the reply for a draft and stores it on that draft | Write |
 | `approve_draft` | Marks a draft approved inside SignalSeek. It does not post | Write |
-| `reject_draft` | Turns a draft down, with an optional reason that tunes later matches | Write |
+| `reject_draft` | Turns a draft down, with an optional tag and reason that tune later matches | Write |
 
 "Write" tools change data inside your SignalSeek account only. No tool writes to Reddit.
 
