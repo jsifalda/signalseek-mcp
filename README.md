@@ -1,5 +1,6 @@
 <p align="center"><img src="icon.svg" width="72" alt="SignalSeek"></p>
-<p align="center"><a href="https://m8ven.ai/mcp/jsifalda/signalseek-mcp"><img src="https://m8ven.ai/badge/mcp/jsifalda/signalseek-mcp" alt="M8ven Trust"></a></p>
+
+[![M8ven Score](https://m8ven.ai/badge/mcp/jsifalda-signalseek-mcp-14ersf?v=ae70c2dc1b2e59414ee0db2cb8799155)](https://m8ven.ai/mcp/jsifalda-signalseek-mcp-14ersf?s=readme)
 
 # SignalSeek MCP server
 
