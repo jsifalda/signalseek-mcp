@@ -1,4 +1,5 @@
 <p align="center"><img src="icon.svg" width="72" alt="SignalSeek"></p>
+<p align="center"><a href="https://m8ven.ai/mcp/jsifalda/signalseek-mcp"><img src="https://m8ven.ai/badge/mcp/jsifalda/signalseek-mcp" alt="M8ven Trust"></a></p>
 
 # SignalSeek MCP server
 
