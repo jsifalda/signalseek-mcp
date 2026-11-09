@@ -3,12 +3,24 @@
   "name": "io.github.jsifalda/signalseek",
   "title": "SignalSeek",
   "description": "Reddit lead monitoring for AI agents. Scored threads and drafted replies. Never posts.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://signalseek.cc",
   "repository": {
     "url": "https://github.com/jsifalda/signalseek-mcp",
     "source": "github"
   },
+  "icons": [
+    {
+      "src": "https://signalseek.cc/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    },
+    {
+      "src": "https://signalseek.cc/apple-icon.png",
+      "mimeType": "image/png",
+      "sizes": ["180x180"]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
