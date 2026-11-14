@@ -1,0 +1,18 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "signalseek",
+  "displayName": "SignalSeek",
+  "version": "1.0.2",
+  "description": "Reddit lead monitoring. Finds threads where people describe the problem your product solves, scores them and drafts a reply. Never posts. An F5Bot alternative for AI agents.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "List my SignalSeek campaigns",
+    "What came in overnight? Show me the best match and its draft",
+    "Create a SignalSeek campaign for my invoicing app for freelance designers"
+  ],
+  "author": { "name": "SignalSeek", "url": "https://signalseek.cc" },
+  "homepage": "https://signalseek.cc",
+  "repository": "https://github.com/jsifalda/signalseek-mcp",
+  "license": "MIT",
+  "keywords": ["reddit", "leads", "lead-generation", "social-listening", "f5bot-alternative", "marketing"]
+}

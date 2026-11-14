@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "signalseek": {
+      "url": "https://signalseek.cc/api/mcp",
+      "oauth": { "clientId": "https://raw.githubusercontent.com/jsifalda/signalseek-mcp/main/clients/antigravity.json" }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "signalseek",
+  "version": "1.0.2",
+  "description": "Reddit lead monitoring. Scored threads and drafted replies. Never posts. An F5Bot alternative for AI agents.",
+  "mcpServers": {
+    "signalseek": {
+      "httpUrl": "https://signalseek.cc/api/mcp",
+      "oauth": {
+        "enabled": true,
+        "clientId": "https://raw.githubusercontent.com/jsifalda/signalseek-mcp/main/clients/gemini-cli.json"
+      }
+    }
+  }
+}

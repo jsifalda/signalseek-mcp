@@ -27,9 +27,29 @@ Team and Enterprise: an Owner adds the connector under **Organization settings â
 
 The connector syncs to your account, so it also works in the Claude iOS app.
 
+## Connect in Google Antigravity
+
+This repo is an Antigravity plugin (`plugin.json`, `mcp_config.json`).
+
+1. Install the plugin from this repo, or from the Antigravity Marketplace when it is listed.
+2. Antigravity opens your browser when the server connects. Sign in to SignalSeek and approve.
+3. Ask: "List my SignalSeek campaigns."
+
+## Connect in Gemini CLI
+
+This repo is a Gemini CLI extension (`gemini-extension.json`).
+
+```bash
+gemini extensions install https://github.com/jsifalda/signalseek-mcp
+```
+
+Then run `/mcp auth signalseek`, sign in to SignalSeek and approve.
+
 ## Other MCP clients
 
-Point the client at `https://signalseek.cc/api/mcp` over streamable HTTP. The server does not support OAuth dynamic client registration. Use a client that supports OAuth client ID metadata documents.
+Point the client at `https://signalseek.cc/api/mcp` over streamable HTTP. The server does not support OAuth dynamic client registration. Use a client that supports OAuth client ID metadata documents, or set a client ID by hand.
+
+The `clients/` folder holds the published client ID documents for Gemini CLI and Antigravity. Each file's raw GitHub URL is its client ID.
 
 ## Tools
 
@@ -70,7 +90,7 @@ Point the client at `https://signalseek.cc/api/mcp` over streamable HTTP. The se
 
 ## About this repo
 
-This repo holds the public docs and the MCP Registry manifest (`server.json`). The server itself is a hosted service, and its source is private.
+This repo holds the public docs, the MCP Registry manifest (`server.json`), the Gemini CLI extension, the Antigravity plugin and their OAuth client ID documents. The server itself is a hosted service, and its source is private.
 
 ## License
 

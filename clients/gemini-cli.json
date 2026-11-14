@@ -1,0 +1,9 @@
+{
+  "client_id": "https://raw.githubusercontent.com/jsifalda/signalseek-mcp/main/clients/gemini-cli.json",
+  "client_name": "SignalSeek for Gemini CLI",
+  "client_uri": "https://github.com/jsifalda/signalseek-mcp",
+  "redirect_uris": ["http://localhost/oauth/callback", "http://127.0.0.1/oauth/callback"],
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code"],
+  "token_endpoint_auth_method": "none"
+}
