@@ -57,7 +57,7 @@ The `clients/` folder holds the published client ID documents for Gemini CLI and
 |---|---|---|
 | `list_campaigns` | Lists your campaigns with status, interval and match counts | Read |
 | `get_campaign` | Reads one campaign in full, plus its strategy summary | Read |
-| `get_campaign_strategy` | Reads a campaign's persona, subreddits and search terms | Read |
+| `get_campaign_strategy` | Reads a campaign's persona, subreddits and search terms. A search term reports `isExcluded` and `autoExcluded` | Read |
 | `get_campaign_stats` | Reads a campaign's draft counts and last monitoring run | Read |
 | `list_drafts` | Lists the Reddit opportunities SignalSeek found, with a summary of each draft | Read |
 | `get_draft` | Reads one draft in full | Read |
@@ -68,7 +68,7 @@ The `clients/` folder holds the published client ID documents for Gemini CLI and
 | `add_subreddits` | Adds subreddits to a campaign, each checked against Reddit first | Write |
 | `update_subreddit` | Excludes, restores or removes one subreddit. Remove works only on subreddits you added | Write |
 | `add_search_terms` | Adds search terms to a campaign | Write |
-| `update_search_term` | Excludes, restores or removes one search term | Write |
+| `update_search_term` | Excludes, restores or removes one search term, and restores one that the daily job auto-excluded | Write |
 | `generate_draft_reply` | Writes the reply for a draft and stores it on that draft | Write |
 | `approve_draft` | Marks a draft approved inside SignalSeek. It does not post | Write |
 | `reject_draft` | Turns a draft down, with an optional tag and reason that tune later matches | Write |
