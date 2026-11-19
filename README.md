@@ -70,7 +70,9 @@ The `clients/` folder holds the published client ID documents for Gemini CLI and
 | `add_search_terms` | Adds search terms to a campaign | Write |
 | `update_search_term` | Excludes, restores or removes one search term, and restores one that the daily job auto-excluded | Write |
 | `generate_draft_reply` | Writes the reply for a draft and stores it on that draft | Write |
-| `approve_draft` | Marks a draft approved inside SignalSeek. It does not post | Write |
+| `save_draft_reply` | Saves your own reply text on a draft, after a content-rule check. It does not approve the draft | Write |
+| `approve_draft` | Marks a draft ready for you to use by hand. It approves the text you saved with `save_draft_reply`, or the generated reply, and tells you which one. It does not post | Write |
+| `record_reply_link` | Records that you posted an approved reply by hand, with the link to your comment. It never checks or touches Reddit | Write |
 | `reject_draft` | Turns a draft down, with an optional tag and reason that tune later matches | Write |
 
 "Write" tools change data inside your SignalSeek account only. No tool writes to Reddit.
