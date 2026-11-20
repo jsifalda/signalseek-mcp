@@ -84,6 +84,18 @@ The `clients/` folder holds the published client ID documents for Gemini CLI and
 - "Create a SignalSeek campaign for my invoicing app. It is for freelance designers who hate chasing late payments."
 - "Pause the campaign for the product I shut down."
 
+## Agent skill: find Reddit buyers
+
+A one-shot skill that needs no account and no MCP server. It uses web search to find Reddit threads where people ask for what your product does, scores them, and drafts replies you post by hand.
+
+- File: [`skills/find-reddit-buyers/SKILL.md`](skills/find-reddit-buyers/SKILL.md)
+- Live copy: https://signalseek.cc/skills/find-reddit-buyers/SKILL.md
+- Use it in any agent:
+
+```text
+Read https://signalseek.cc/skills/find-reddit-buyers/SKILL.md and follow it to find people on Reddit who need my product.
+```
+
 ## Privacy
 
 - SignalSeek reads public Reddit content. It never posts, comments or sends messages.
@@ -92,7 +104,7 @@ The `clients/` folder holds the published client ID documents for Gemini CLI and
 
 ## About this repo
 
-This repo holds the public docs, the MCP Registry manifest (`server.json`), the Gemini CLI extension, the Antigravity plugin and their OAuth client ID documents. The server itself is a hosted service, and its source is private.
+This repo holds the public docs, the MCP Registry manifest (`server.json`), the Gemini CLI extension, the Antigravity plugin, the find-reddit-buyers agent skill and their OAuth client ID documents. The server itself is a hosted service, and its source is private.
 
 ## License
 
