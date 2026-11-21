@@ -57,7 +57,7 @@ The `clients/` folder holds the published client ID documents for Gemini CLI and
 |---|---|---|
 | `list_campaigns` | Lists your campaigns with status, interval and match counts | Read |
 | `get_campaign` | Reads one campaign in full, plus its strategy summary | Read |
-| `get_campaign_strategy` | Reads a campaign's persona, subreddits and search terms. A search term reports `isExcluded` and `autoExcluded` | Read |
+| `get_campaign_strategy` | Reads a campaign's persona, subreddits and search terms. A search term reports `isExcluded`, true when you or the daily job excluded it, and `autoExcluded`, true when the job did | Read |
 | `get_campaign_stats` | Reads a campaign's draft counts and last monitoring run | Read |
 | `list_drafts` | Lists the Reddit opportunities SignalSeek found, with a summary of each draft | Read |
 | `get_draft` | Reads one draft in full | Read |
