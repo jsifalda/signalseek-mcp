@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.jsifalda/signalseek",
   "title": "SignalSeek",
-  "description": "Find the people on Reddit asking for what you sell, with a reply ready for each. Never posts.",
+  "description": "Find people on Reddit asking for what you sell, and draft a reply you post yourself. Never posts.",
   "version": "1.1.1",
   "websiteUrl": "https://signalseek.cc",
   "repository": {
