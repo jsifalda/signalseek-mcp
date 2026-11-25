@@ -4,7 +4,7 @@
 
 # SignalSeek MCP server
 
-Someone on Reddit is asking for what you sell right now. Ask your AI agent, and SignalSeek shows you who they are and drafts a reply. You post it yourself on Reddit.
+Someone on Reddit is asking for what you sell right now. Ask your AI agent, and SignalSeek shows you who they are, with a drafted reply.
 
 **SignalSeek never posts.** The server has no posting tool of any kind.
 
