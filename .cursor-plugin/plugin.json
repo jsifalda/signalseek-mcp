@@ -2,7 +2,7 @@
   "name": "signalseek",
   "displayName": "SignalSeek",
   "version": "1.0.2",
-  "description": "Reddit lead monitoring. Finds threads where people describe the problem your product solves, scores them and drafts a reply. Never posts. An F5Bot alternative for AI agents.",
+  "description": "Stop reading Reddit all day. Your agent brings you only the people asking for what you sell, and drafts a reply you post yourself. Never posts. An F5Bot alternative for AI agents.",
   "author": {
     "name": "SignalSeek",
     "url": "https://signalseek.cc"
