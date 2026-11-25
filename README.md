@@ -4,7 +4,7 @@
 
 # SignalSeek MCP server
 
-Reddit lead monitoring for AI agents. SignalSeek watches Reddit for people who describe the problem your product solves, scores each thread, and drafts a reply. You read the matches and drafts from Claude, then you write the reply yourself on Reddit.
+Someone on Reddit is asking for what you sell right now. Ask your AI agent, and SignalSeek shows you who they are, with a reply drafted for each one.
 
 **SignalSeek never posts.** The server has no posting tool of any kind.
 
