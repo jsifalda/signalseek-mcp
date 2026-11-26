@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "signalseek": {
+      "type": "http",
+      "url": "https://signalseek.cc/api/mcp",
+      "oauth": {
+        "clientId": "https://raw.githubusercontent.com/jsifalda/signalseek-mcp/main/clients/claude-code.json"
+      }
+    }
+  }
+}

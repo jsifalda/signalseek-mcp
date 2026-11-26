@@ -27,6 +27,17 @@ Team and Enterprise: an Owner adds the connector under **Organization settings â
 
 The connector syncs to your account, so it also works in the Claude iOS app.
 
+## Connect in Claude Code
+
+This repo is a Claude Code plugin. It holds the MCP server config and both agent skills.
+
+```bash
+/plugin marketplace add jsifalda/signalseek-mcp
+/plugin install signalseek@signalseek
+```
+
+Then run `/mcp`, pick signalseek, sign in to SignalSeek and approve. Then ask: "Work my SignalSeek leads."
+
 ## Connect in Google Antigravity
 
 This repo is an Antigravity plugin (`plugin.json`, `mcp_config.json`).
@@ -49,7 +60,7 @@ Then run `/mcp auth signalseek`, sign in to SignalSeek and approve.
 
 Point the client at `https://signalseek.cc/api/mcp` over streamable HTTP. The server does not support OAuth dynamic client registration. Use a client that supports OAuth client ID metadata documents, or set a client ID by hand.
 
-The `clients/` folder holds the published client ID documents for Gemini CLI and Antigravity. Each file's raw GitHub URL is its client ID.
+The `clients/` folder holds the published client ID documents for Claude Code, Cursor, Gemini CLI and Antigravity. Each file's raw GitHub URL is its client ID.
 
 ## Tools
 
@@ -84,6 +95,13 @@ The `clients/` folder holds the published client ID documents for Gemini CLI and
 - "Create a SignalSeek campaign for my invoicing app. It is for freelance designers who hate chasing late payments."
 - "Pause the campaign for the product I shut down."
 
+## Agent skill: daily leads
+
+A skill that needs the SignalSeek MCP server. It lists the leads SignalSeek found. It writes each reply in your agent from your own brand and product docs. It reads those docs fresh each run and never copies them into SignalSeek. It saves and approves the reply on your OK. It records the link after you post by hand.
+
+- File: [`skills/signalseek-daily-leads/SKILL.md`](skills/signalseek-daily-leads/SKILL.md)
+- The Claude Code plugin installs it.
+
 ## Agent skill: find Reddit buyers
 
 A one-shot skill that needs no account and no MCP server. It uses web search to find Reddit threads where people ask for what your product does, scores them, and drafts replies you post by hand.
@@ -104,7 +122,7 @@ Read https://signalseek.cc/skills/find-reddit-buyers/SKILL.md and follow it to f
 
 ## About this repo
 
-This repo holds the public docs, the MCP Registry manifest (`server.json`), the Gemini CLI extension, the Antigravity plugin, the find-reddit-buyers agent skill and their OAuth client ID documents. The server itself is a hosted service, and its source is private.
+This repo holds the public docs, the MCP Registry manifest (`server.json`), the Claude Code plugin, the Cursor plugin, the Gemini CLI extension, the Antigravity plugin, the daily-leads and find-reddit-buyers agent skills and their OAuth client ID documents. The server itself is a hosted service, and its source is private.
 
 ## License
 
