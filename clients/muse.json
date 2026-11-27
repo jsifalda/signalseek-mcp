@@ -1,0 +1,13 @@
+{
+  "client_id": "https://raw.githubusercontent.com/jsifalda/signalseek-mcp/main/clients/muse.json",
+  "client_name": "SignalSeek for Muse",
+  "client_uri": "https://github.com/jsifalda/signalseek-mcp",
+  "redirect_uris": [
+    "https://muse.ai/api/hatch/oauth/callback",
+    "https://platform.muse.ai/oauth/credential-test/callback",
+    "https://agent.meta.ai/api/hatch/oauth/callback"
+  ],
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code"],
+  "token_endpoint_auth_method": "none"
+}
