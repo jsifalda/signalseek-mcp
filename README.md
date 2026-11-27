@@ -60,7 +60,7 @@ Then run `/mcp auth signalseek`, sign in to SignalSeek and approve.
 
 Point the client at `https://signalseek.cc/api/mcp` over streamable HTTP. The server does not support OAuth dynamic client registration. Use a client that supports OAuth client ID metadata documents, or set a client ID by hand.
 
-The `clients/` folder holds the published client ID documents for Claude Code, Cursor, Gemini CLI and Antigravity. Each file's raw GitHub URL is its client ID.
+The `clients/` folder holds the published client ID documents for Claude Code, Cursor, Gemini CLI, Antigravity and Meta Muse. Each file's raw GitHub URL is its client ID.
 
 ## Tools
 
