@@ -40,12 +40,14 @@ Then run `/mcp`, pick signalseek, sign in to SignalSeek and approve. Then ask: "
 
 ## Connect in ChatGPT
 
-1. In ChatGPT, open **Settings**, then **Apps**, then **Advanced settings**. Turn on **Developer mode**.
-2. Go back to **Apps** and click **Create**. Enter a name and the URL `https://signalseek.cc/api/mcp`. Pick **OAuth** for authentication.
-3. Sign in to SignalSeek and approve.
-4. In a new chat, turn on the SignalSeek app. Ask: "List my SignalSeek campaigns."
+1. Open ChatGPT on the web and go to **Plugins**. Click the plus button, then **Add custom MCP server**.
+2. Enter a name, for example SignalSeek. Under **Connection**, paste `https://signalseek.cc/api/mcp`.
+3. Pick **OAuth** for authentication. If ChatGPT asks how to register the client, pick the client ID metadata document (CIMD).
+4. Read the risk warning, confirm it, and click **Create as a plugin**. Then install the plugin.
+5. ChatGPT opens the SignalSeek sign-in page. Sign in and approve.
+6. In a chat, type `@`, pick SignalSeek, and ask: "List my SignalSeek campaigns."
 
-Developer mode is on paid ChatGPT plans. On some plans, ChatGPT allows only the tools that read. OpenAI can rename these menus, see [OpenAI's help article](https://help.openai.com/en/articles/12584461).
+Workspace rules can block custom MCP servers. OpenAI can rename these menus, see [OpenAI's setup guide](https://developers.openai.com/api/docs/guides/developer-mode).
 
 ## Connect in Google Antigravity
 
