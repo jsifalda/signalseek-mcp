@@ -10,7 +10,7 @@ Someone on Reddit is asking for what you sell right now. Ask your AI agent, and 
 
 - Endpoint: `https://signalseek.cc/api/mcp`
 - Transport: streamable HTTP
-- Auth: OAuth. You sign in to your own SignalSeek account. Claude reaches that one account and no other.
+- Auth: OAuth. You sign in to your own SignalSeek account. Your AI client reaches that one account and no other.
 - Registry name: `io.github.jsifalda/signalseek` in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=signalseek)
 - Website: [signalseek.cc](https://signalseek.cc) · Connector page: [signalseek.cc/mcp](https://signalseek.cc/mcp)
 
@@ -38,6 +38,15 @@ This repo is a Claude Code plugin. It holds the MCP server config and both agent
 
 Then run `/mcp`, pick signalseek, sign in to SignalSeek and approve. Then ask: "Work my SignalSeek leads."
 
+## Connect in ChatGPT
+
+1. In ChatGPT, open **Settings**, then **Apps**, then **Advanced settings**. Turn on **Developer mode**.
+2. Go back to **Apps** and click **Create**. Enter a name and the URL `https://signalseek.cc/api/mcp`. Pick **OAuth** for authentication.
+3. Sign in to SignalSeek and approve.
+4. In a new chat, turn on the SignalSeek app. Ask: "List my SignalSeek campaigns."
+
+Developer mode is on paid ChatGPT plans. On some plans, ChatGPT allows only the tools that read. OpenAI can rename these menus, see [OpenAI's help article](https://help.openai.com/en/articles/12584461).
+
 ## Connect in Google Antigravity
 
 This repo is an Antigravity plugin (`plugin.json`, `mcp_config.json`).
@@ -58,7 +67,7 @@ Then run `/mcp auth signalseek`, sign in to SignalSeek and approve.
 
 ## Other MCP clients
 
-Point the client at `https://signalseek.cc/api/mcp` over streamable HTTP. The server does not support OAuth dynamic client registration. Use a client that supports OAuth client ID metadata documents, or set a client ID by hand.
+SignalSeek works in any MCP client that signs in with OAuth and a client ID metadata document. Point the client at `https://signalseek.cc/api/mcp` over streamable HTTP. The server does not support OAuth dynamic client registration. Use a client that supports OAuth client ID metadata documents, or set a client ID by hand.
 
 The `clients/` folder holds the published client ID documents for Claude Code, Cursor, Gemini CLI, Antigravity and Meta Muse. Each file's raw GitHub URL is its client ID.
 
