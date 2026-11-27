@@ -67,6 +67,15 @@ gemini extensions install https://github.com/jsifalda/signalseek-mcp
 
 Then run `/mcp auth signalseek`, sign in to SignalSeek and approve.
 
+## Connect in GitHub Copilot CLI
+
+The `copilot/` folder is an Agent Plugins plugin for Copilot CLI (`plugin.json`, `mcp.json`).
+
+1. Install the plugin from the `copilot/` folder of this repo, or from awesome-copilot when it is listed.
+2. The server has no dynamic client registration, so Copilot CLI asks for an OAuth client ID. Enter `https://github.com/copilot/cli/client-metadata.json`.
+3. Sign in to SignalSeek and approve.
+4. Ask: "List my SignalSeek campaigns."
+
 ## Other MCP clients
 
 SignalSeek works in any MCP client that signs in with OAuth and a client ID metadata document. Point the client at `https://signalseek.cc/api/mcp` over streamable HTTP. The server does not support OAuth dynamic client registration. Use a client that supports OAuth client ID metadata documents, or set a client ID by hand.
